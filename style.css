@@ -26,6 +26,7 @@ body
 	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: bolder;
+
 }
 
 
@@ -33,7 +34,7 @@ body
 #menu a:link, #menu a:visited
 {
 	color: black;
-	background: aqua;
+	/* background: aqua; */
 	text-decoration: none;
 	transition: all ease-in-out 450ms;
 }
@@ -46,8 +47,6 @@ body
 	display:block;
 	height: 5px;
 	width: 0%;
-	/* background-color: purple; */
-	/* transition: all ease-in-out 450ms; */
 }
 
 #menu a:hover
@@ -146,4 +145,22 @@ body
 img:hover
 {
 	box-shadow: 0 0 10px 5px black;
+}
+
+#video
+{
+	width: 50px;
+	height: 50px;
+}
+
+
+
+#like_button
+{
+	width: 80px;
+	height: 50px;
+	background-color: black;
+	color: rgb(34, 224, 38);
+	border-radius: 5px;
+
 }

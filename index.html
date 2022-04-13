@@ -42,11 +42,13 @@
   <hr>
   my playlist
   <br/>
-  <video>
+  <br/>
+  <video id="video" controls>
+    <source type="video/webm" src="">
     <source type="video" src="">
     <source type="video" src="">
     <source type="video" src="">
-    <source type="video" src="">
+    Your browser does not support HTML5.
   </video>
   <!-- <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
   </iframe> -->
@@ -60,6 +62,7 @@
   <hr>
   give me a like
   <br/>
+  <button id="like_button" type="button">Like</button>
   <br/>
   <br/>
 </section>
@@ -87,23 +90,17 @@
   <hr>
   contact me
   <br/>
+  <br/>
   <div id="contact_form">
     <form action="" method="post">
-      <label>Title
-        <br/>
-      </label>
-      <input id="Mr" type="radio" value="Mr">
-      <label for="Mr">
-        Mr
-      </label>
-      <input id="Mrs" type="radio" value="Mrs">
-      <label for="Mrs">
-        Mrs
-      </label>
-      <input id="Miss" type="radio" value="Miss">
-      <label for="Miss">
-        Miss
-      </label>
+      Title
+      <br/>
+      <input id="Mr" type="radio" value="Mr" name="contact_info">
+      <label for="Mr">Mr</label>
+      <input id="Mrs" type="radio" value="Mrs" name="contact_info">
+      <label for="Mrs">Mrs</label>
+      <input id="Miss" type="radio" value="Miss" name="contact_info">
+      <label for="Miss">Miss</label>
     </form>
     <label>First name</label>
     <input type="text" name="first_name" required>
@@ -112,14 +109,13 @@
     <input type="text" name="last_name">
     <br/>
     <label>Email</label>
-    <input type="email" name="email" required>
+    <input type="email" size="40" name="email" required>
     <br/>
     Message:
     <br/>
-    <textarea name="description" id="textarea" cols="120" rows="10">
-    </textarea>
+    <textarea name="description" id="textarea" cols="120" rows="10"></textarea required>
     <br/>
-    <button>Send</button>
+    <button type="submit">Send</button>
   </div>
   <br/>
   <br/>
