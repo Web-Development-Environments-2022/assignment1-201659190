@@ -174,3 +174,24 @@ img:hover
 {
 	resize: vertical;
 }
+
+#ans_table
+{
+	width: 60%;
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.ans_row td
+{
+	font-size: 30px;
+	border: 1px solid black;
+}
+
+.ans_row th
+{
+	font-size: 40px;
+	border: 1px solid black;
+}
