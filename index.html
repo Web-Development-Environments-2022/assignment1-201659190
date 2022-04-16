@@ -61,8 +61,8 @@
   <br/>
   <hr>
   give me a like
-  <br/>
-  <button id="like_button" type="button">Like</button>
+  <p id="count"></p>
+  <button id="like_button" type="button" onclick="count_button_clicked()">Like</button>
   <br/>
   <br/>
 </section>
@@ -92,30 +92,24 @@
   <br/>
   <br/>
   <div id="contact_form">
-    <form action="" method="post">
-      Title
+    <form action="mailto: hshah@post.bgu.ac.il" method="post" enctype="application/x-www-form-urlencoded" name="Test">
+      <input type="text" name="full_name" placeholder="Full name" required>
       <br/>
-      <input id="Mr" type="radio" value="Mr" name="contact_info">
-      <label for="Mr">Mr</label>
-      <input id="Mrs" type="radio" value="Mrs" name="contact_info">
-      <label for="Mrs">Mrs</label>
-      <input id="Miss" type="radio" value="Miss" name="contact_info">
-      <label for="Miss">Miss</label>
+      <input type="email" name="email" placeholder="Email" required>
+      <br/>
+      <select id="Emojis">
+        <option value="1">&#128513</option>
+        <option value="2">&#128526</option>
+        <option value="3">&#128567</option>
+        <option value="4">&#128561</option>
+        <option value="5">&#128557</option>
+      </select>
+      <button type="button" onclick="add_emoji()">Add</button>
+      <br/>
+      <textarea name="description" id="description" cols="40" rows="5" placeholder="Message" required></textarea>
+      <br/>
+      <button type="submit">Send</button>
     </form>
-    <label>First name</label>
-    <input type="text" name="first_name" required>
-    <br/>
-    <label>Last name</label>
-    <input type="text" name="last_name">
-    <br/>
-    <label>Email</label>
-    <input type="email" size="40" name="email" required>
-    <br/>
-    Message:
-    <br/>
-    <textarea name="description" id="textarea" cols="120" rows="10"></textarea required>
-    <br/>
-    <button type="submit">Send</button>
   </div>
   <br/>
   <br/>
@@ -140,5 +134,24 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
+<script>
+  let c = 0;
+  function count_button_clicked()
+  {
+    document.getElementById("count").innerHTML = "you have " +  ++c + " likes";
+  }
+</script>
+
+<script>
+  function add_emoji()
+  {
+    var select = document.querySelector("#Emojis");
+    var emo = select.options[select.selectedIndex].text;
+    var text = document.getElementById("description");
+    document.getElementById("description").value = text.value + emo;
+  }
+</script>
+
 </body>
 </html>
