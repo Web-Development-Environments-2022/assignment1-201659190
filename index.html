@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="UTF-8">
 </head>
 <body>
   <div id="menu">
@@ -55,8 +56,9 @@
   <br/>
   <hr>
   give me a like
-  <p id="count"></p>
+  <br/>
   <button id="like_button" type="button" onclick="count_button_clicked()">Like</button>
+  <p id="count"></p>
   <br/>
   <br/>
 </section>
@@ -112,23 +114,24 @@
   <br/>
   <br/>
   <div id="contact_form">
-    <form action="mailto: hshah@post.bgu.ac.il" method="post" enctype="application/x-www-form-urlencoded" name="Test">
+    <form action="mailto: hshah@post.bgu.ac.il?subject=Question\Comment on Ela Elinsky" method="post" enctype="text/plain">
       <input type="text" name="full_name" placeholder="Full name" required>
       <br/>
       <input type="email" name="email" placeholder="Email" required>
       <br/>
-      <select id="Emojis">
+      <select id="Emojis" >
         <option value="1">&#128513</option>
         <option value="2">&#128526</option>
         <option value="3">&#128567</option>
         <option value="4">&#128561</option>
-        <option value="5">&#128557</option>
+        <option value="5">&#128557</option>        
       </select>
       <button type="button" onclick="add_emoji()">Add</button>
       <br/>
       <textarea name="description" id="description" cols="40" rows="5" placeholder="Message" required></textarea>
       <br/>
       <button type="submit">Send</button>
+      <button type="reset">Reset</button>
     </form>
   </div>
   <br/>
