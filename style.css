@@ -3,6 +3,12 @@
 body
 {
 	background-color: bisque;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	/* background-image: url("Images/lilac flower2.jpg");
+	background-repeat: no-repeat; */
 }
 
 #menu
@@ -13,12 +19,13 @@ body
 	background: white;
 	background-color: aqua;
 	text-align: center;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
 } 
 
-p
-{
-	font-size: 20px;
-}
+
 
 
 /* configure the list's items */
@@ -30,7 +37,12 @@ p
 	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: bolder;
+}
 
+#menu li a
+{
+	display: block;
+	height: 30px;
 }
 
 
@@ -72,6 +84,11 @@ p
 	font-weight: bolder;
 }
 
+#about p
+{
+	font-size: 30px;
+}
+
 #photos.section
 {
 	text-align: center;
@@ -86,18 +103,17 @@ p
 	font-weight: bolder;
 }
 
-#playlist video
-{
-	width: 400px;
-	height: 200px;
-	
-}
 
 #like.section
 {
 	text-align: center;
 	font-size: 40px;
 	font-weight: bolder;
+}
+
+#like p
+{
+	font-size: 25px;
 }
 
 #qrcoder.section
@@ -121,58 +137,30 @@ p
 	font-weight: bolder;
 }
 
-
-#img1
+/* #like_button
 {
-	width: 30%;
-	height: auto;
-}
-
-#img2
-{
-	width: 30%;
-	height: auto;
-}
-
-#img3
-{
-	width: 30%;
-	height: auto;
-}
-
-#img4
-{
-	width: 30%;
-	height: auto;
-}
-
-img:hover
-{
-	box-shadow: 0 0 10px 5px black;
-}
-
-#video
-{
-	width: 50px;
-	height: 50px;
-}
-
-
-
-#like_button
-{
+	padding: 15px, 25px;
 	width: 80px;
 	height: 50px;
-	background-color: black;
-	color: rgb(34, 224, 38);
-	border-radius: 5px;
+	background-color: #04AA6D;
+	color: white;
+	border-radius: 15px;
+	box-shadow: 0 9px rgb(153, 153, 153);
+	border: none;
 }
 
-
-#textarea
+#like_button:hover
 {
-	resize: vertical;
+	background-color: #3e8e41;
 }
+
+#like_button:active
+{
+	background-color: #3e8d41;
+	box-shadow: 0 5px rgb(102, 102, 102);
+	transform: translateY(4px);
+} */
+
 
 #ans_table
 {
@@ -193,4 +181,39 @@ img:hover
 {
 	font-size: 40px;
 	border: 1px solid black;
+}
+
+
+#pictures img
+{
+	width: 350px;
+	height: 300px;
+	object-fit: cover;
+}
+
+#pictures img:hover
+{
+	box-shadow: 0 0 10px 5px black;
+}
+
+#contact_form button
+{
+	font-size: 20px;
+}
+
+#contact_form input
+{
+	/* height: 30px; */
+	font-size: 20px;
+}
+
+#description
+{
+	resize: vertical;
+	font-size: 20px;
+}
+
+#Emojis
+{
+	font-size: 25px;
 }
