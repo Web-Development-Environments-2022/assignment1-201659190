@@ -11,6 +11,7 @@ body
 	background-repeat: no-repeat; */
 }
 
+
 #menu
 {
 	position: fixed;
@@ -100,6 +101,9 @@ body
 {
 	font-size: 4vh;
 	word-break: keep-all;
+	margin-left: 5vh;
+	margin-right: 5vh;
+	text-align: right;
 }
 
 /* #photos.section
@@ -177,9 +181,9 @@ body
 } */
 
 
-#ans_table
+#ans1_table, #ans2_table
 {
-	width: 50vh;
+	width: 150vh;
 	border: 0.1vh solid rgba(0, 0, 0, 1);
 	margin-left: auto;
 	margin-right: auto;
@@ -222,14 +226,15 @@ body
 {
 	/* height: 30px; */
 	font-size: 3.5vh;
-	margin-top: 3px;
-	margin-bottom: 3px;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
 }
 
 #description
 {
 	resize: vertical;
 	font-size: 3.5vh;
+	margin-top: 1vh;
 }
 
 #Emojis
@@ -255,7 +260,9 @@ h1::after, h1::before
 	margin-left: 1.5vh;
 }
 
-/* iframe
+
+#spa p
 {
-	font-size: 10vh;
-} */
+	text-align: right;
+	margin-right: 5vh;
+}
