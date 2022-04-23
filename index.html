@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 </head>
 <body>
   <div id="fb-root"></div>
@@ -23,8 +23,7 @@
 		  
 <section id="about" class="section" dir="rtl">
   <br/>
-  <br/>
-  about me
+  <h1>about me</h1>
   <br/>
   <p>
     אלה אילינסקי
@@ -54,8 +53,7 @@
 
 <section id="photos" class="section">
   <br/>
-  <hr>
-  my photos
+  <h1>my photos</h1>
   <br/>
   <br/>
   <picture id="pictures">
@@ -75,8 +73,7 @@
 
 <section id="playlist" class="section">
   <br/>
-  <hr>
-  my playlist
+  <h1>my playlist</h1>
   <br/>
   <br/>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/FSWlci_oQDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -90,8 +87,7 @@
 
 <section id="like" class="section">
   <br/>
-  <hr>
-  give me a like
+  <h1>give me a like</h1>
   <br/>
   <!-- <button id="like_button" type="button" onclick="count_button_clicked()">Like</button>
   <p id="count"></p> -->
@@ -110,8 +106,7 @@
 
 <section id="qrcoder" class="section">
   <br/>
-  <hr>
-  scan my code
+  <h1>scan my code</h1>
   <br/>
   <br/>
   <br/>
@@ -119,8 +114,7 @@
 
 <section id="spa" class="section">
   <br/>
-  <hr>
-  ans
+  <h1>ans</h1>
   <br/>
   <br/>
   <table id="ans_table">
@@ -154,8 +148,7 @@
 
 <section id="contact" class="section">
   <br/>
-  <hr>
-  contact me
+  <h1>contact me</h1>
   <br/>
   <br/>
   <div id="contact_form" >
@@ -203,14 +196,6 @@ $(function(){
  });​
  </script>
 
-<!-- <script>
-  let c = 0;
-  function count_button_clicked()
-  {
-    document.getElementById("count").innerHTML = "you have " +  ++c + " likes";
-  }
-</script> -->
-
 <script>
   function add_emoji()
   {
@@ -221,19 +206,17 @@ $(function(){
   }
 </script>
 
+<script>
+  const heightOutput = document.querySelector('#height');
+  const widthOutput = document.querySelector('#width');
 
-<!-- <script>
-  function add_emoji()
-  {
-    var dl = document.querySelector("#Emojis").value;
-    if (!dl)
-      return;
-    alert(dl)
-    var emo = select.options[select.selectedIndex].text;
-    var text = document.getElementById("description");
-    document.getElementById("description").value = text.value + emo;
+  function reportWindowSize() {
+    heightOutput.textContent = window.innerHeight;
+    widthOutput.textContent = window.innerWidth;
   }
-</script> -->
+
+  window.onresize = reportWindowSize;
+</script>
 
 </body>
 </html>
