@@ -1,31 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.css">  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css">  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.10.2/tinymce.min.js" 
+    referrerpolicy="origin">
+  </script>
+  <script>
+    tinymce.init({
+      selector: "#description",
+      plugins: "emoticons",
+      toolbar: "emoticons",
+      toolbar_location: "bottom",
+      menubar: false
+    });
+  </script> -->
+
+
+
+
 </head>
 <body>
   <div id="fb-root"></div>
   <script 
-    async defer crossorigin="anonymous" 
-    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" 
-    nonce="xgEQyaiP">
-  </script>
+  async defer crossorigin="anonymous" 
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" 
+  nonce="dknpwSra"></script>
   <div id="menu">
+    <i class="fa-solid fa-user"></i>
     <li><a href="#about">About Me</a></li>
+    <i class="fa-solid fa-camera"></i>
     <li><a href="#photos">My Photos</a></li>
+    <i class="fa-solid fa-music"></i>
     <li><a href="#playlist">My Playlist</a></li>
+    <i class="fa-solid fa-thumbs-up"></i>
     <li><a href="#like">Like</a></li>
+    <i class="fa-solid fa-qrcode"></i>
     <li><a href="#qrcoder">QR code</a></li>
+    <i class="fa-solid fa-question"></i>
     <li><a href="#spa">Q&A</a></li>
+    <i class="fa-solid fa-envelope"></i>
     <li><a href="#contact">Contact Me</a></li>
 </div>
 		  
 <section id="about" class="section" dir="rtl">
   <br/>
+  
   <h1>about me</h1>
-  <p>
+  <p style="text-align: center;">
     אלה אילינסקי
     2.2.1932 -30.04.2021
   </p>
@@ -106,17 +133,15 @@
   <br/>
   <h1>give me a like</h1>
   <br/>
-  <!-- <button id="like_button" type="button" onclick="count_button_clicked()">Like</button>
-  <p id="count"></p> -->
   <div 
-    class="fb-like" 
-    data-href="https://developers.facebook.com/docs/plugins/" 
-    data-width="100px" 
-    data-layout="button_count" 
-    data-action="like" 
-    data-size="large" 
-    data-share="false">
-  </div>
+  class="fb-like" 
+  data-href="https://web-development-environments-2022.github.io/assignment1-201659190/" 
+  data-width="150" 
+  data-layout="button_count" 
+  data-action="like" 
+  data-size="large" 
+  data-share="false">
+</div>
   <br/>
   <br/>
 </section>
@@ -172,14 +197,14 @@
     <tr class="ans_row" dir="rtl">
       <td>המשתמש מכניס כתובת של אתר של חברה והוא מחפש בדף שהתקבל אם יש תוצאה לחיפוש שלו או לא</td>
       <td>
-        המשתמש מכניס את מילות החיפוש בכתובת חיפוש ומקבל תוצאות
-         יותר מדויקות של חברות וקהילות שפירסמו על המבורגרים 
-         או שהמשתמש יכול לשאול בפורומים איפה יש המבורגרים בבאר שבע
-         או שהמשתמש יוכל לקבל את המידע מאפליקצית רשת 
+        1. המשתמש מכניס את מילות החיפוש בכתובת חיפוש ומקבל תוצאות
+           יותר מדויקות של חברות וקהילות שפירסמו על המבורגרים 
+         <br/>2. המשתמש יכול לשאול בפורומים איפה יש המבורגרים בבאר שבע
+         <br/>3. המשתמש יוכל לקבל את המידע מאפליקצית רשת 
       </td>
       <td>
-        המשתמש מכניס את מילות החיפוש בכתובת חיפוש ומקבל תוצאות
-        הרבה יותר מדויקות או שהמשתמש יוכל לשאול בינה מלאכותית ברשת ולקבל את התוצאות
+        1. המשתמש מכניס את מילות החיפוש בכתובת חיפוש ומקבל תוצאות הרבה יותר מדויקות  
+        <br/> 2. המשתמש יוכל לשאול בינה מלאכותית ברשת ולקבל את התוצאות
       </td>
     </tr>
   </table>
@@ -191,7 +216,7 @@
   <br/>
   <br/>
   <div id="contact_form" >
-    <form action="mailto: hshah@post.bgu.ac.il?subject=שאלות/תגובות על אלה איליניסקי" method="post" enctype="text/plain">
+    <form action="mailto:hshah@post.bgu.ac.il?subject=שאלות/תגובות על אלה איליניסקי" method="post" enctype="text/plain">
       <input type="text" size="40" name="full_name" placeholder="Full name" required>
       <br/>
       <input type="email" size="40" name="email" placeholder="Email" required>
@@ -256,6 +281,9 @@ $(function(){
 
   window.onresize = reportWindowSize;
 </script>
+
+
+
 
 </body>
 </html>
