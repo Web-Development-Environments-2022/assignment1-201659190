@@ -128,8 +128,6 @@ body
 	object-fit: cover;
 	width: 35vh;
 	height: 30vh;
-	/* -webkit-filter: drop-shadow(4px 4px 10px purple);
-	filter: drop-shadow(4px, 4px, 10px black); */
 }
 
 #pictures img:hover
@@ -137,7 +135,12 @@ body
 	box-shadow: 0 0 12px 7px rgba(0, 0, 0, 1);
 }
 
-
+#qrcoder img
+{
+	object-fit: cover;
+	width: 35vh;
+	height: 35vh;
+}
 
 #contact_form button
 {
